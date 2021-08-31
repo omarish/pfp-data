@@ -1,0 +1,18 @@
+{
+  "id": "cryptopunks",
+  "label": "Cryptopunks",
+  "website": "https://www.larvalabs.com/cryptopunks",
+  "github": "https://github.com/larvalabs/cryptopunks",
+  "deployments": {
+    "1": "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB"
+  },
+  "items": {
+    "layout": "grid",
+    "url": "https://github.com/larvalabs/cryptopunks/blob/master/punks.png",
+    "rows": 100,
+    "cols": 100,
+    "itemWidth": 24,
+    "itemHeight": 24,
+    "itemCount": 10000
+  }
+}

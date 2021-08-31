@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pfp.bag.finance/nft.schema.json",
+  "title": "NFT List",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The id schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["cryptopunks"]
+    },
+    "label": {
+      "$id": "#/properties/label",
+      "type": "string",
+      "title": "The label schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["Cryptopunks"]
+    },
+    "website": {
+      "$id": "#/properties/website",
+      "type": "string",
+      "title": "The website schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["https://www.larvalabs.com/cryptopunks"]
+    },
+    "github": {
+      "$id": "#/properties/github",
+      "type": "string",
+      "title": "The github schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["https://github.com/larvalabs/cryptopunks"]
+    },
+    "deployments": {
+      "$id": "#/properties/deployments",
+      "type": "object",
+      "title": "The deployments schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "1": "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB"
+        }
+      ],
+      "required": ["1"],
+      "properties": {
+        "1": {
+          "$id": "#/properties/deployments/properties/1",
+          "type": "string",
+          "title": "The 1 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": ["0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "items": {
+      "$id": "#/properties/items",
+      "type": "object",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "layout": "grid",
+          "url": "https://github.com/larvalabs/cryptopunks/blob/master/punks.png",
+          "rows": 100,
+          "cols": 100,
+          "itemWidth": 24,
+          "itemHeight": 24,
+          "itemCount": 10000
+        }
+      ],
+      "required": [
+        "layout",
+        "url",
+        "rows",
+        "cols",
+        "itemWidth",
+        "itemHeight",
+        "itemCount"
+      ],
+      "properties": {
+        "layout": {
+          "$id": "#/properties/items/properties/layout",
+          "type": "string",
+          "title": "The layout schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": ["grid"]
+        },
+        "url": {
+          "$id": "#/properties/items/properties/url",
+          "type": "string",
+          "title": "The url schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://github.com/larvalabs/cryptopunks/blob/master/punks.png"
+          ]
+        },
+        "rows": {
+          "$id": "#/properties/items/properties/rows",
+          "type": "integer",
+          "title": "The rows schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [100]
+        },
+        "cols": {
+          "$id": "#/properties/items/properties/cols",
+          "type": "integer",
+          "title": "The cols schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [100]
+        },
+        "itemWidth": {
+          "$id": "#/properties/items/properties/itemWidth",
+          "type": "integer",
+          "title": "The itemWidth schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [24]
+        },
+        "itemHeight": {
+          "$id": "#/properties/items/properties/itemHeight",
+          "type": "integer",
+          "title": "The itemHeight schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [24]
+        },
+        "itemCount": {
+          "$id": "#/properties/items/properties/itemCount",
+          "type": "integer",
+          "title": "The itemCount schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [10000]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
